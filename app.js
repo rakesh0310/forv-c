@@ -5,7 +5,7 @@ const port = process.env.PORT;
 const app = express();
 app.use(bodyParser.json());
 
-app.get('/', access, (req, res) => {
+app.get('/', (req, res) => {
   res.status(200).json({ msg: 'Welcome' });
 });
 
